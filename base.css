@@ -14,59 +14,6 @@ html, body {
 	padding: 1em;
 }
 
-.header {
-	color: white;
-	background-color: #6C7A85;
-	padding: 1rem;
-	margin: 1em;
-
-}
-
-.main {
-	height: 100%;
-
-}
-
-.main-section {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-}
-
-.games-section {
-	padding: 1em;
-	margin: 1em;
-	width: 50%;
-	border: 1px solid grey;
-}
-
-.games-list {
-	list-style: none;
-	padding-left: 0;
-}
-
-.games-list > li {
-	padding: 1em 1em;
-	margin: 1em 0;
-	font-size: 20px;
-	border: 1px black solid;
-}
-
-.stats-section {
-	padding: 1em;
-	margin: 1em;
-	width: 50%;
-	border: 1px solid grey;
-}
-
-.bc-white {
-	background-color: white;
-}
-
-
-
-
-
 
 
 
