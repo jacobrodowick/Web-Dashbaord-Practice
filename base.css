@@ -14,7 +14,71 @@ html, body {
 	padding: 1em;
 }
 
+.header {
+	width: 100%;
+}
 
+.header-nav {
+	width: 100%;
+}
+
+.header-nav-list {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding-left: 0;
+	width: 100%;
+}
+
+.header-nav-list > li {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+
+.header-nav-list > li > a {
+	position: relative;
+	font-size: 2em;
+	color: darkgray;
+	font-weight: 600;
+	text-decoration: none;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.header-nav-list > li > a:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 3px;
+  	background: #000;
+	transition: width 0.6s linear;
+}
+
+.header-nav-list > li > a:hover::before {
+	/*border-top: 1px solid black;
+	border-bottom: 1px solid black;*/
+	width: 100%;
+}
+
+.header-nav-list > li > a:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	height: 3px;
+  	background: #000;
+	transition: width 0.6s linear;
+}
+
+.header-nav-list > li > a:hover::after {
+	/*border-top: 1px solid black;
+	border-bottom: 1px solid black;*/
+	width: 100%;
+}
 
 
 /*Generic Classes*/
