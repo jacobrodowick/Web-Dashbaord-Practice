@@ -7,7 +7,15 @@ html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	background-color: #E0E1DD;
+	background-color: var(--black2);
+}
+
+:root {
+	--black1: #0B0C10;
+	--black2: #1F2833;
+	--grey1: #C5C6C7;
+	--blue1: #66FCF1;
+	--blue2: #45A29E;
 }
 
 .content-wrapper {
@@ -18,6 +26,7 @@ html, body {
 .header {
 	width: 100%;
 	height: 100%;
+	display: flex;
 }
 
 .header-nav {
@@ -43,13 +52,15 @@ html, body {
 .header-nav-list > li > a {
 	position: relative;
 	font-size: 1.5em;
-	color: #1B263B;
+	color: var(--blue1);
 	font-weight: 600;
 	text-decoration: none;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
 
+
+/*Nav Hover Effect*/
 .header-nav-list > li > a:before {
 	content: '';
 	position: absolute;
@@ -82,6 +93,32 @@ html, body {
 	/*border-top: 1px solid black;
 	border-bottom: 1px solid black;*/
 	width: 100%;
+}
+
+.menu-icon {
+	display: inline;
+	height: auto;
+}
+
+.menu-icon-line {
+	width: 35px;
+ 	height: 5px;
+  	background-color: var(--blue1);
+ 	margin: 6px 0;
+ 	transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar-1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar-2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar-3 {
+  transform: translate(0, -11px) rotate(45deg);
 }
 
 
