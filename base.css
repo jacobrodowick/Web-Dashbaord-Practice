@@ -19,8 +19,11 @@ html, body {
 
 .content-wrapper {
 	height: 100%;
+
 }
 
+
+/*Header Classes*/
 .header {
 	background-color: var(--green1);
 	padding: 1em;
@@ -32,8 +35,10 @@ html, body {
 	width: 100%;
 }
 
-.header-title > h1 {
+.header-title > p {
 	margin: 0;
+	font-size: 2em;
+	font-weight: bold;
 }
 
 .nav-wrapper {
@@ -43,13 +48,14 @@ html, body {
 }
 
 .header-nav {
-	
+	width: 100%;
 }
 
 .header-nav-list {
 	margin: 0;
 	padding: 0;
 	display: flex;
+
 	list-style: none;
 	width: 100%;
 
@@ -57,7 +63,7 @@ html, body {
 
 .header-nav-list > li {
 	padding-left: 1em;
-	padding-right: 1em;
+	padding-right: 5em;
 }
 
 
@@ -106,8 +112,23 @@ html, body {
 	width: 100%;
 }
 
+.main {
+	padding: 1em;
+}
+
+.main-h1 {
+	margin: 0;
+}
 
 
+.footer {
+	background-color: var(--green3);
+	color: white;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+}
 
 /*Generic Classes*/
 .fw-bold {
